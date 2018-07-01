@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.lo53.setuptool.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:id="@+id/mainLayout">
+
+    <!--<ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/h_rdc"/> -->
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@drawable/connexion_button_deconnected"
+           android:gravity="center_horizontal"
+           android:id="@+id/connectionStatus"
+           android:text="Déconnecté"
+           android:textSize="30sp"
+           android:layout_marginTop="10dp"
+           android:layout_marginLeft="40dp"
+           android:layout_marginRight="40dp"
+           android:textAlignment="center"/>
+
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/x_value"
+           android:hint="Position X"
+           android:inputType="numberDecimal"/>
+
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/y_value"
+           android:hint="Position Y"
+           android:inputType="numberDecimal"/>
+
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Calibration"
+           android:background="@drawable/calibration_button"
+           android:textAlignment="textEnd"
+           android:layout_marginTop="10dp"
+           android:layout_marginLeft="30dp"
+           android:onClick="configurationButtonClick"/>
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Content"
+           android:id="@+id/testText"
+           android:textSize="30sp"/>
+
+   </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
